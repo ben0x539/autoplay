@@ -1,0 +1,7 @@
+channels = ["hungry"]
+wait_seconds = 60
+
+[user_config]
+name = "ben0x539"
+token = "oauth:444444444444444444444444444444"
+capabilities = []
