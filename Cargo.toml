@@ -1,0 +1,21 @@
+[package]
+name = "autoplay"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tracing = "0.1.29"
+tracing-subscriber = "0.3.3"
+eyre = "0.6.6"
+structopt = "0.3.26"
+toml = "0.5.8"
+tokio = { version = "1.15.0", features = ["full"] }
+serde = "1.0.134"
+serde_derive = "1.0.134"
+
+[dependencies.twitchchat]
+git = "https://github.com/museun/twitchchat"
+rev  = "7a214ea" # last released version is still on tokio 0.2
+features = ["tokio", "tokio-openssl", "openssl", "tokio-util", "async", "serde"]
